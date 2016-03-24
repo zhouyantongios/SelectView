@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "SelectView.h"
+@interface ViewController ()<SelectViewDelegate>
 
 @end
 
@@ -16,7 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *titleArray = @[@"123",@"123123",@"112",@"1212",@"hhe"];
+    SelectView *selectView = [[SelectView alloc]initWithSelectView:titleArray Delegate:self andFrame:CGRectMake(0, 100, self.view.bounds.size.width, 80)];
+    __weak typeof(self)weakSelf = self;
+    selectView.changeBlock = ^(NSInteger index) {
+        [weakSelf printLog:index];
+    };
+    [self.view addSubview:selectView];
+}
+
+#pragma mark -- SelectViewDelegate
+- (void)tapSelectViewIndex:(NSInteger)index {
+    NSLog(@"Delegate:%ld",index);
+}
+
+#pragma mark -- ResponseSelectViewBlockMethod
+- (void)printLog:(NSInteger)index {
+    NSLog(@"Block:%zd",index);
 }
 
 - (void)didReceiveMemoryWarning {

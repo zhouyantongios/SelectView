@@ -13,6 +13,7 @@
 		261A06471CA3DA56003F0B1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A06451CA3DA56003F0B1C /* Main.storyboard */; };
 		261A06491CA3DA56003F0B1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261A06481CA3DA56003F0B1C /* Assets.xcassets */; };
 		261A064C1CA3DA56003F0B1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A064A1CA3DA56003F0B1C /* LaunchScreen.storyboard */; };
+		261A06551CA3DA7B003F0B1C /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A06541CA3DA7B003F0B1C /* SelectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		261A06481CA3DA56003F0B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261A064B1CA3DA56003F0B1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261A064D1CA3DA56003F0B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261A06531CA3DA7B003F0B1C /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
+		261A06541CA3DA7B003F0B1C /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				261A06401CA3DA56003F0B1C /* AppDelegate.m */,
 				261A06421CA3DA56003F0B1C /* ViewController.h */,
 				261A06431CA3DA56003F0B1C /* ViewController.m */,
+				261A06531CA3DA7B003F0B1C /* SelectView.h */,
+				261A06541CA3DA7B003F0B1C /* SelectView.m */,
 				261A06451CA3DA56003F0B1C /* Main.storyboard */,
 				261A06481CA3DA56003F0B1C /* Assets.xcassets */,
 				261A064A1CA3DA56003F0B1C /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			files = (
 				261A06441CA3DA56003F0B1C /* ViewController.m in Sources */,
 				261A06411CA3DA56003F0B1C /* AppDelegate.m in Sources */,
+				261A06551CA3DA7B003F0B1C /* SelectView.m in Sources */,
 				261A063E1CA3DA56003F0B1C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
